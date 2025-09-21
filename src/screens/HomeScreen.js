@@ -1,10 +1,5 @@
-import {
-  View,
-  Text,
-  FlatList,
-  TouchableHighlight,
-  Linking,
-} from "react-native";
+import { View, Text, FlatList, Linking, TouchableOpacity } from "react-native";
+import Svg, { Polyline, Path } from "react-native-svg";
 import ScreenWrapper from "../components/ScreenWrapper";
 import { apps } from "../utils/libs";
 
@@ -27,7 +22,7 @@ const HomeScreen = () => {
           borderRadius: 5,
           width: "100%",
           padding: 8,
-          marginBottom: 10,
+          marginBottom: 13,
         }}
       >
         <View
@@ -43,22 +38,48 @@ const HomeScreen = () => {
             style={{
               color: "green",
               fontWeight: "500",
-              fontSize: 14,
+              fontSize: 18,
             }}
           >
-            {item.name}
+            {item.id}. {item.name}
           </Text>
-          <TouchableHighlight
-            style={{
-              color: "blue",
-              fontWeight: "500",
-              fontSize: 14,
-            }}
+          <TouchableOpacity
             onPress={() => handleLinkPress(item.link)}
-            underlayColor="#e1f7df"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
           >
-            <Text>Link</Text>
-          </TouchableHighlight>
+            <Text
+              style={{
+                color: "blue",
+                fontWeight: "500",
+                fontSize: 18,
+                textDecorationLine: "none",
+              }}
+            >
+              Link{" "}
+            </Text>
+            <Svg width={16} height={16} viewBox="0 0 16 16">
+              <Polyline
+                points="8.25 2.75,2.75 2.75,2.75 13.25,13.25 13.25,13.25 7.75"
+                fill="none"
+                stroke="#000000"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+              />
+              <Path
+                d="m13.25 2.75-5.5 5.5m3-6.5h3.5v3.5"
+                fill="none"
+                stroke="#000000"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+              />
+            </Svg>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -71,11 +92,27 @@ const HomeScreen = () => {
           ListHeaderComponent={
             <View>
               <Text
-                style={{ marginBottom: 15, textAlign: "justify", fontSize: 13 }}
+                style={{
+                  width: "100%",
+                  marginBottom: 16,
+                  textAlign: "center",
+                  fontWeight: "800",
+                  fontSize: 22,
+                  color: "green",
+                }}
               >
-                সঠিক জায়গায় সঠিক প্রজাতির চারা রোপণ বনায়নের অন্যতম পূর্বশর্ত।
-                স্থান ও গাছের বৈশিষ্ট্য বিচারে বাংলাদেশের বিভিন্ন স্থানে রোপণ
-                উপযোগী বনজ গাছের নাম নিম্নে দেওয়া হলো।
+                বি.এফ.আর.আই-এর ই-সেবা
+              </Text>
+              <Text
+                style={{
+                  width: "100%",
+                  marginBottom: 20,
+                  textAlign: "center",
+                  fontSize: 16,
+                }}
+              >
+                বি.এফ.আর.আই এর সকল অ্যাপসমূহের তালিকা এবং তাদের প্লে ষ্টোরের
+                লিঙ্ক দেয়া হল
               </Text>
             </View>
           }
