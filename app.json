@@ -4,10 +4,10 @@
     "slug": "bfri_e_services",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/bfri_logo.png",
+    "icon": "./assets/images/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/bfri_logo.png",
+      "image": "./assets/images/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,21 +16,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/bfri_logo.png",
+        "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.bfri.bfri_e_services"
     },
     "web": {
-      "favicon": "./assets/images/bfri_logo.png"
+      "favicon": "./assets/images/logo.png"
     },
     "extra": {
       "eas": {
         "projectId": "e5c040a2-4b79-414c-96a8-d64c128be2e7"
       }
     },
-    "plugins": [
-      "react-native-edge-to-edge"
-    ]
+    "plugins": ["react-native-edge-to-edge"]
   }
 }
