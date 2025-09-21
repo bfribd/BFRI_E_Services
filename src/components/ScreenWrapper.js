@@ -1,7 +1,7 @@
 import { SystemBars } from "react-native-edge-to-edge";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const ScreenWrapper = ({ children, style, hasNoHeader }) => {
+const ScreenWrapper = ({ children, style, hasNoHeader, statusBarTheme }) => {
   const edges = ["left", "right", "bottom"];
 
   if (hasNoHeader) {
@@ -17,7 +17,7 @@ const ScreenWrapper = ({ children, style, hasNoHeader }) => {
       }}
       edges={edges}
     >
-      <SystemBars style="light" />
+      <SystemBars style={statusBarTheme || "light"} />
       {children}
     </SafeAreaView>
   );

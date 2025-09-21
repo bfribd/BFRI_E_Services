@@ -86,7 +86,7 @@ const HomeScreen = () => {
   };
 
   return (
-    <ScreenWrapper hasNoHeader={true}>
+    <ScreenWrapper hasNoHeader={true} statusBarTheme="dark">
       <View style={{ padding: 16 }}>
         <FlatList
           ListHeaderComponent={
@@ -111,8 +111,8 @@ const HomeScreen = () => {
                   fontSize: 16,
                 }}
               >
-                বি.এফ.আর.আই এর সকল অ্যাপসমূহের তালিকা এবং তাদের প্লে ষ্টোরের
-                লিঙ্ক দেয়া হল
+                বি.এফ.আর.আই এর সকল অ্যাপসমূহের তালিকা এবং তাদের প্লে-ষ্টোরের
+                লিঙ্ক দেয়া হল:
               </Text>
             </View>
           }
