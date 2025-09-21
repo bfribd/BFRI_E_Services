@@ -38,7 +38,7 @@ const HomeScreen = () => {
             style={{
               color: "green",
               fontWeight: "500",
-              fontSize: 18,
+              fontSize: 17,
             }}
           >
             {item.id}. {item.name}
@@ -55,7 +55,7 @@ const HomeScreen = () => {
               style={{
                 color: "blue",
                 fontWeight: "500",
-                fontSize: 18,
+                fontSize: 17,
                 textDecorationLine: "none",
               }}
             >
