@@ -15,73 +15,29 @@ const HomeScreen = () => {
 
   const renderItem = ({ item }) => {
     return (
-      <View
+      <TouchableOpacity
         key={item.id}
         style={{
           backgroundColor: "#e5ebe4",
           borderRadius: 5,
           width: "100%",
-          padding: 8,
-          marginBottom: 13,
+          padding: 18,
+          marginBottom: 22,
+          paddingHorizontal: 20,
         }}
+        onPress={() => handleLinkPress(item.link)}
       >
-        <View
+        <Text
           style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: 10,
-            alignItems: "center",
-            width: "100%",
+            color: "green",
+            fontWeight: "500",
+            fontSize: 18,
+            textDecorationLine: "none",
           }}
         >
-          <Text
-            style={{
-              color: "green",
-              fontWeight: "500",
-              fontSize: 17,
-            }}
-          >
-            {item.id}. {item.name}
-          </Text>
-          <TouchableOpacity
-            onPress={() => handleLinkPress(item.link)}
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-            }}
-          >
-            <Text
-              style={{
-                color: "blue",
-                fontWeight: "500",
-                fontSize: 17,
-                textDecorationLine: "none",
-              }}
-            >
-              Link{" "}
-            </Text>
-            <Svg width={16} height={16} viewBox="0 0 16 16">
-              <Polyline
-                points="8.25 2.75,2.75 2.75,2.75 13.25,13.25 13.25,13.25 7.75"
-                fill="none"
-                stroke="#000000"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-              <Path
-                d="m13.25 2.75-5.5 5.5m3-6.5h3.5v3.5"
-                fill="none"
-                stroke="#000000"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-              />
-            </Svg>
-          </TouchableOpacity>
-        </View>
-      </View>
+          {item.id}. {item.name}
+        </Text>
+      </TouchableOpacity>
     );
   };
 
@@ -94,25 +50,15 @@ const HomeScreen = () => {
               <Text
                 style={{
                   width: "100%",
-                  marginBottom: 16,
+                  marginBottom: 25,
                   textAlign: "center",
                   fontWeight: "800",
                   fontSize: 22,
                   color: "green",
+                  lineHeight: 35,
                 }}
               >
-                বি.এফ.আর.আই-এর ই-সেবা
-              </Text>
-              <Text
-                style={{
-                  width: "100%",
-                  marginBottom: 20,
-                  textAlign: "center",
-                  fontSize: 16,
-                }}
-              >
-                বি.এফ.আর.আই এর সকল অ্যাপসমূহের তালিকা এবং তাদের প্লে-ষ্টোরের
-                লিঙ্ক দেয়া হল:
+                বাংলাদেশ বন গবেষণা ইনস্টিটিউট এর মোবাইল অ্যাপস সমূহ
               </Text>
             </View>
           }
