@@ -44,8 +44,8 @@ const WelsomeScreen = ({ navigation }) => {
             <Button
               style={{ ...styles.openButton, width: "75%" }}
               textColor="white"
-              contentStyle={{ paddingHorizontal: 10, paddingVertical: 7 }}
-              labelStyle={{ fontWeight: "900", fontSize: 17 }}
+              contentStyle={{ paddingHorizontal: 10, paddingVertical: 6 }}
+              labelStyle={{ fontWeight: "900", fontSize: 16 }}
               mode="contained"
               onPress={() => navigation.navigate("HomeScreen")}
             >
@@ -80,46 +80,45 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginTop: 20,
+    marginTop: 10,
     paddingHorizontal: 20,
     width: "100%",
   },
 
   appTitle: {
     textAlign: "center",
-    fontSize: 25,
-    lineHeight: 38,
+    fontSize: 22,
+    lineHeight: 33,
     color: "white",
     fontWeight: "bold",
     textShadowColor: "rgba(0, 0, 0, 0.75)",
     textShadowOffset: { width: -1, height: 3 },
     textShadowRadius: 10,
-    marginTop: 40,
+    marginTop: 30,
   },
 
   presentedByHeader: {
     textAlign: "center",
-    fontSize: 19,
+    fontSize: 16,
     lineHeight: 22,
     color: "#70e678",
     fontWeight: "bold",
     textShadowColor: "rgba(0, 0, 0, 0.75)",
     textShadowOffset: { width: -1, height: 2 },
     textShadowRadius: 10,
-    marginTop: 85,
-    marginBottom: 5,
+    marginTop: 80,
   },
 
   presentedByText: {
     textAlign: "center",
-    fontSize: 17,
+    fontSize: 14,
     lineHeight: 20,
     color: "white",
     fontWeight: "bold",
     textShadowColor: "rgba(0, 0, 0, 0.75)",
     textShadowOffset: { width: -1, height: 3 },
     textShadowRadius: 10,
-    marginTop: 15,
+    marginTop: 10,
   },
 
   openButtonContainer: {
