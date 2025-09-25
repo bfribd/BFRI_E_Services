@@ -31,7 +31,7 @@ const HomeScreen = () => {
           style={{
             color: "green",
             fontWeight: "500",
-            fontSize: 17,
+            fontSize: 16.5,
             textDecorationLine: "none",
           }}
         >

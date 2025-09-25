@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   appTitle: {
     textAlign: "center",
     fontSize: 22,
-    lineHeight: 33,
+    lineHeight: 35,
     color: "white",
     fontWeight: "bold",
     textShadowColor: "rgba(0, 0, 0, 0.75)",
