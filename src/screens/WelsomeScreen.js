@@ -29,7 +29,7 @@ const WelsomeScreen = ({ navigation }) => {
           </View>
           <View style={{ flex: 1 }}>
             <Text style={styles.appTitle}>
-              বাংলাদেশ বন গবেষণা ইনস্টিটিউট এর মোবাইল অ্যাপস সমূহ
+              বাংলাদেশ বন গবেষণা ইনস্টিটিউট এর মোবাইল অ্যাপসমূহ
             </Text>
             <Text style={styles.presentedByHeader}>Presented By</Text>
             <Text style={styles.presentedByText}>
